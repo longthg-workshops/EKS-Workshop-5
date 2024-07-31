@@ -27,26 +27,26 @@ Truy cập [Bảng điều khiển Amazon GuardDuty](https://console.aws.amazon.
 
 Nhấp vào nút **Get Started**.
 
-![](/images/p6/p61/6.1-1-GettingStarted.png)
+![](/EKS-Workshop-5/images/p6/p61/6.1-1-GettingStarted.png)
 
 Nhấp vào **Enable GuardDuty**
 
-![](/images/p6/p61/6.1-2-Enable.png)
+![](/EKS-Workshop-5/images/p6/p61/6.1-2-Enable.png)
 
 
 Truy cập **EKS Protection** trên menu bên trái và kiểm tra liệu Bảo vệ EKS đã được kích hoạt cho cả hai Audit Logs và Runtime Monitoring.
 
-![](/images/p6/p61/6.1-3-EnableEKS.png)
+![](/EKS-Workshop-5/images/p6/p61/6.1-3-EnableEKS.png)
 
 Kéo xuống mục **Runtime Monitoring Configuration** và nhấp vào _Enable_:
-![](/images/p6/p61/6.1-4-EnableRTMonitor.png)
+![](/EKS-Workshop-5/images/p6/p61/6.1-4-EnableRTMonitor.png)
 
 Kéo xuống mục **Automated Agent Configuration** và nhấp vào _Enable_:
-![](/images/p6/p61/6.1-5-EnableRTMonitorEKS.png)
+![](/EKS-Workshop-5/images/p6/p61/6.1-5-EnableRTMonitorEKS.png)
 
 Hãy kiểm tra tab **EKS clusters runtime coverage.**.
 
-![](/images/p6/p61/6.1-6-RTCoverageEKS.png)
+![](/EKS-Workshop-5/images/p6/p61/6.1-6-RTCoverageEKS.png)
 
 *Nếu cụm của bạn không xuất hiện trong danh sách Cụm hoặc thống kê phạm vi không hiển thị 1/1 (100%), hãy đợi thêm vài phút để Amazon GuardDuty hoàn thành việc triển khai mô hình giám sát.*
 
@@ -62,4 +62,4 @@ aws-guardduty-agent-k7x2b   1/1     Running   0          58s
 
 Sau đó, truy cập **Findings** trên menu bên trái. Bạn sẽ thấy rằng chưa có phát hiện nào có sẵn.
 
-![](/images/p6/p61/6.1-7-findings.png)
+![](/EKS-Workshop-5/images/p6/p61/6.1-7-findings.png)

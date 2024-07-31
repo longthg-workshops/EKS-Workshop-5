@@ -10,7 +10,7 @@ pre: "<b> 1.1 </b>"
 
 #### Secure Hosts
 
-![EKS](/images/0001/0001.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-5/images/0001/0001.png?featherlight=false&width=90pc)
 
 
 #### Secure Kubernetes
@@ -19,7 +19,7 @@ Chúng ta cần đưa ra hai loại quyết định:
 - Ai có thể truy cập?
 - Họ có thể làm gì?
 
-![EKS](/images/0001/0002.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-5/images/0001/0002.png?featherlight=false&width=90pc)
 
 #### Xác thực (Authentication)
 
@@ -33,7 +33,7 @@ Chúng ta cần đưa ra hai loại quyết định:
 
 - Tất cả các giao tiếp với cụm, giữa các thành phần khác nhau như Cụm ETCD, kube-controller-manager, lập lịch, máy chủ API, cũng như những thành phần đang chạy trên các nút làm việc như kubelet và kubeproxy đều được bảo vệ bằng mã hóa TLS.
 
-![EKS](/images/0001/0003.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-5/images/0001/0003.png?featherlight=false&width=90pc)
 
 #### Chính sách Mạng
 Cách giao tiếp giữa các ứng dụng trong cụm.

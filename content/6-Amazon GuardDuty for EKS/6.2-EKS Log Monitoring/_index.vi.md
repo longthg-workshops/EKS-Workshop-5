@@ -43,19 +43,19 @@ $ kubectl -n kube-system exec nginx -- pwd
 
 Trong vài phút, chúng ta sẽ thấy mục phát hiện `Execution:Kubernetes/ExecInKubeSystemPod` trên [bảng điều khiển Findings của GuardDuty](https://console.aws.amazon.com/guardduty/home#/findings).
 
-![](/images/p6/p62/6.2-1-FindingsMenu.png)
+![](/EKS-Workshop-5/images/p6/p62/6.2-1-FindingsMenu.png)
 
 Nếu bạn nhấp vào mục phát hiện này, nó sẽ mở một tab ở bên phải màn hình, hiển thị chi tiết về phát hiện và một giải thích ngắn gọn về nó.
 
-![](/images/p6/p62/6.2-2-FindingDetails.png)
+![](/EKS-Workshop-5/images/p6/p62/6.2-2-FindingDetails.png)
 
 Nó cũng cung cấp cho bạn lựa chọn để điều tra phát hiện bằng cách sử dụng Amazon Detective.
 
-![](/images/p6/p62/6.2-3-DetectiveOnFinding.png)
+![](/EKS-Workshop-5/images/p6/p62/6.2-3-DetectiveOnFinding.png)
 
 Một thông tin quan trọng đáng xem xét là **Hành động** được phát hiện, trên mục này (Loại giám sát nhật ký), chúng ta có thể thấy rằng liên quan đến một `KUBERNETES_API_CALL`.
 
-![](/images/p6/p62/6.2-4-Actions.png)
+![](/EKS-Workshop-5/images/p6/p62/6.2-4-Actions.png)
 
 Dọn dẹp Pod gây ra phát hiện:
 
@@ -73,7 +73,7 @@ $ kubectl -n default create rolebinding sa-default-admin --clusterrole cluster-a
 
 Trong vài phút, bạn sẽ thấy phát hiện `Policy:Kubernetes/AdminAccessToDefaultServiceAccount` trên [bảng điều khiển Phát hiện GuardDuty](https://console.aws.amazon.com/guardduty/home#/findings). Dành chút thời gian để phân tích chi tiết của Finding, Action và Detective Investigation.
 
-![](/images/p6/p62/6.2-5-IAM.png)
+![](/EKS-Workshop-5/images/p6/p62/6.2-5-IAM.png)
 
 Xóa RoleBinding vi phạm bằng cách chạy lệnh sau.
 
@@ -114,7 +114,7 @@ kubernetes-dashboard        LoadBalancer   172.20.218.132   ad0fbc5914a2c4d1baa8
 
 Nếu bạn quay lại [bảng điều khiển Phát hiện GuardDuty](https://console.aws.amazon.com/guardduty/home#/findings), bạn sẽ thấy phát hiện `Policy:Kubernetes/ExposedDashboard`. Một lần nữa, hãy sử dụng một vài thời gian để phân tích chi tiết của _Phát hiện_, _Hành động_ và _Điều tra phát hiện_.
 
-![](/images/p6/p62/6.2-6-Dashboard.png)
+![](/EKS-Workshop-5/images/p6/p62/6.2-6-Dashboard.png)
 
 Gỡ cài đặt các thành phần bảng điều khiển Kubernetes bằng cách chạy lệnh sau:
 
@@ -141,9 +141,9 @@ $ kubectl apply -f ~/environment/eks-workshop/modules/security/Guardduty/mount/p
 
 Trong vài phút tới, chúng ta sẽ thấy hai kết quả `PrivilegeEscalation:Kubernetes/PrivilegedContainer` và `Persistence:Kubernetes/ContainerWithSensitiveMount` trên [bảng điều khiển Tìm thấy của GuardDuty](https://console.aws.amazon.com/guardduty/home#/findings).
 
-![](/images/p6/p62/6.2-7-Privilege.png)
+![](/EKS-Workshop-5/images/p6/p62/6.2-7-Privilege.png)
 
-![](/images/p6/p62/6.2-8-Persistence.png)
+![](/EKS-Workshop-5/images/p6/p62/6.2-8-Persistence.png)
 
 Một lần nữa, hãy dành một ít thời gian để phân tích chi tiết _Finding_, _Action_ và _Detective Investigation_.
 

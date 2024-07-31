@@ -13,11 +13,11 @@ pre: "<b> 1.4 </b>"
 - Server Certificates for Servers
 - Client Certificates for Clients
 
-![EKS](/images/0003/0001.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-5/images/0003/0001.png?featherlight=false&width=90pc)
 
 Hãy xem các thành phần khác nhau trong cụm k8s và xác định các máy chủ và máy khách khác nhau cùng với việc ai nói chuyện với ai.
 
-![EKS](/images/0003/0002.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-5/images/0003/0002.png?featherlight=false&width=90pc)
 
 #### Generate Certificates
 
@@ -43,7 +43,7 @@ $ openssl req -new -key ca.key -subj "/CN=KUBERNETES-CA" -out ca.csr
 $ openssl x509 -req -in ca.csr -signkey ca.key -out ca.crt
 ```
 
-![EKS](/images/0003/0003.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-5/images/0003/0003.png?featherlight=false&width=90pc)
 
 #### Generating Client Certificates
 
@@ -65,7 +65,7 @@ $ openssl req -new -key admin.key -subj "/CN=kube-admin" -out admin.csr
 $ openssl x509 -req -in admin.csr -CA ca.crt -CAkey ca.key -out admin.crt
 ```
 
-![EKS](/images/0003/0004.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-5/images/0003/0004.png?featherlight=false&width=90pc)
 
 - Certificate with admin privilages
 
