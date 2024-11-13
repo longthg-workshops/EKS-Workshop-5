@@ -1,12 +1,11 @@
 ---
 title: "Giới thiệu"
-date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: "<b> 1. </b>"
 ---
 
-#### Giới thiệu
+#### Giới thiệu về
 
 Kubernetes là một nền tảng nguồn mở, khả chuyển, có thể mở rộng để quản lý các ứng dụng được đóng gói và các service, giúp thuận lợi trong việc cấu hình và tự động hoá việc triển khai ứng dụng. Kubernetes là một hệ sinh thái lớn và phát triển nhanh chóng. Các dịch vụ, sự hỗ trợ và công cụ có sẵn rộng rãi.
 

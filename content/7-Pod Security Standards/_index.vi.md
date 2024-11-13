@@ -1,6 +1,5 @@
 ---
 title: "Tiêu chuẩn an toàn cho pod"
-date: "`r Sys.Date()`"
 weight: 7
 chapter: false
 pre: "<b> 7. </b>"

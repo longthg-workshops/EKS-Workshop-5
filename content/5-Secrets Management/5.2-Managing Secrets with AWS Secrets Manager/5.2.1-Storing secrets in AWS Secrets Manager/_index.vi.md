@@ -1,6 +1,5 @@
 ---
 title: "Storing secrets in AWS Secrets Manager"
-date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: "<b> 5.2.1 </b>"

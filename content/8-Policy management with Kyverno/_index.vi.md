@@ -1,6 +1,5 @@
 ---
 title: "Policy management with Kyverno"
-date: "`r Sys.Date()`"
 weight: 8
 chapter: false
 pre: "<b> 8. </b>"

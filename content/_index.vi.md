@@ -1,41 +1,41 @@
 ---
-title: "Kubernetes trên AWS"
-date: "`r Sys.Date()`"
+title: "Bảo mật cụm EKS của bạn"
 weight: 1
 chapter: false
 ---
 
-# Kubernetes trên AWS
+# Bảo mật cụm EKS của bạn
 
-Kubernetes là một nền tảng mã nguồn mở, linh hoạt, có khả năng mở rộng, phục vụ việc quản lý các ứng dụng được đóng gói và các dịch vụ liên quan, giúp việc cấu hình và tự động hóa quá trình triển khai ứng dụng trở nên thuận tiện hơn. Được biết đến như một hệ sinh thái lớn và phát triển nhanh chóng, Kubernetes cung cấp sự hỗ trợ rộng rãi qua các dịch vụ và công cụ đa dạng.
+Tính bảo mật và Sự tuân thủ là trách nhiệm chung giữa AWS và khách hàng. AWS chịu trách nhiệm bảo vệ cơ sở hạ tầng bên dưới tất cả các dịch vụ được cung cấp trên đám mây AWS, được gọi là **_Bảo mật CHO Đám mây_**. Cơ sở hạ tầng này bao gồm phần cứng, phần mềm, mạng và các cơ sở bên dưới dùng để chạy các dịch vụ AWS Cloud. Trách nhiệm của khách hàng được xác định bởi các dịch vụ AWS mà họ chọn. Nó quyết định lượng công việc cấu hình khách hàng phải thực hiện như một phần trách nhiệm bảo mật của họ, được gọi là **_Bảo mật TRONG Đám mây_**.
 
-Tên Kubernetes bắt nguồn từ tiếng Hy Lạp, nghĩa là người lái tàu hoặc hoa tiêu. Kubernetes được Google công bố mã nguồn vào năm 2014, dựa trên gần một thập kỷ kinh nghiệm quản lý workload lớn trong thực tế của Google, kết hợp với các ý tưởng và best practices từ cộng đồng.
+![SRM](../images/home/0001-Shared_Responsibility_Model.png)
 
-#### Quay ngược thời gian
+Đối với EKS, **_Mô hình Chia sẻ trách nhiệm (Shared Responsibility Model)_** có thể được miêu tả như sau:
 
-Hãy xem xét tại sao Kubernetes lại quan trọng thông qua việc nhìn lại quá khứ.
+- **Bảo mật cho đám mây:** - AWS chịu trách nhiệm bảo vệ cơ sở hạ tầng dùng cho việc vận hành các dịch vụ AWS. Đối với Amazon EKS, AWS chịu trách nhiệm về tầng điều khiển Kubernetes, bao gồm các nút tính toán thuộc tầng điều khiển và cơ sở dữ liệu **_etcd_**. Các kiểm toán viên bên thứ ba thường xuyên kiểm tra và xác minh tính hiệu quả của bảo mật của chúng tôi như một phần của các chương trình tuân thủ AWS. Để tìm hiểu về các chương trình tuân thủ áp dụng cho Amazon EKS, hãy xem Dịch vụ AWS trong phạm vi theo Chương trình tuân thủ.
 
-![Kubernetes](/EKS-Workshop-5/images/4/00010.svg?featherlight=false&width=60pc)
+- **Bảo mật trong đám mây:** - Trách nhiệm của bạn bao gồm các lĩnh vực sau.
 
-**Thời kỳ triển khai truyền thống:** Ban đầu, các ứng dụng được chạy trực tiếp trên máy chủ vật lý, khiến việc phân bổ tài nguyên gặp khó khăn do không có cơ chế xác định ranh giới tài nguyên cho từng ứng dụng. Cách tiếp cận này dẫn đến nguy cơ một ứng dụng có thể sử dụng quá nhiều tài nguyên, ảnh hưởng đến hoạt động của các ứng dụng khác. Giải pháp là chạy mỗi ứng dụng trên một máy chủ vật lý riêng biệt, nhưng điều này lại không hiệu quả về mặt chi phí và tài nguyên.
+    - Cấu hình bảo mật của tầng dữ liệu, bao gồm cấu hình các nhóm bảo mật (security group) cho phép lưu lượng truyền từ tầng điều khiển Amazon EKS vào VPC của khách hàng
 
-**Thời kỳ triển khai ảo hóa:** Ảo hóa được giới thiệu như một giải pháp cho phép chạy nhiều Máy ảo (VM) trên cùng một máy chủ vật lý, giúp cô lập ứng dụng và tăng cường bảo mật. Ảo hóa cũng giúp cải thiện hiệu quả sử dụng tài nguyên và khả năng mở rộng.
+    - Cấu hình các node cũng như các container
 
-**Thời kỳ triển khai Container:** Container giống như VM nhưng nhẹ hơn và chia sẻ Hệ điều hành (HĐH) với nhau. Container mang lại nhiều lợi ích như tạo mới và triển khai ứng dụng nhanh chóng, phát triển và triển khai liên tục, phân biệt rõ ràng giữa quá trình phát triển và vận hành, cung cấp tính nhất quán qua các môi trường, khả năng di chuyển giữa các cloud và HĐH, và quản lý ứng dụng tập trung.
+    - Hệ điều hành của node (bao gồm các bản cập nhật và bản vá bảo mật)
 
-#### Tại sao bạn cần Kubernetes và nó có thể làm gì?
+    - Phần mềm ứng dụng liên quan khác:
 
-Container là phương tiện hiệu quả để đóng gói và chạy ứng dụng của bạn. Trong môi trường sản xuất, cần có cơ chế quản lý các container một cách hiệu quả, đảm bảo không có downtime. Kubernetes giúp quản lý các hệ thống phân tán mạnh mẽ, tự động hóa việc nhân rộng, cung cấp các mẫu triển khai và nhiều hơn nữa.
+        - Thiết lập và quản lý các biện pháp kiểm soát mạng, chẳng hạn như các quy tắc tường lửa
 
-Kubernetes mang lại:
+        - Quản lý danh tính và quản lý quyền truy cập ở cấp nền tảng, bao gồm cả trong và ngoài phạm vi IAM
 
-- **Phát hiện dịch vụ và cân bằng tải**
-- **Điều phối bộ nhớ**
-- **Tự động rollouts và rollbacks**
-- **Đóng gói tự động**
-- **Tự phục hồi**
-- **Quản lý cấu hình và bảo mật**
+    - Mức độ nhạy cảm của dữ liệu của bạn, các yêu cầu của công ty bạn và luật pháp và quy định hiện hành
 
-#### Những gì Kubernetes không phải là
+Tùy thuộc vào việc sử dụng **_Self-Managed Node Groups_** (nhóm nút tính toán do người dùng quản lý), **_Manage Node Groups_** (nhóm nút do AWS quản lý), hay **_Fargate_**, phần trách nhiệm của AWS đối với bảo mật của bạn có thể ít hoặc nhiều hơn:
 
-Kubernetes không phải là một hệ thống PaaS truyền thống, toàn diện. Nó hoạt động ở tầng container, cung cấp tính năng giống như PaaS như triển khai, nhân rộng, cân bằng tải, nhưng là một giải pháp linh hoạt và có thể mở rộng, không giới hạn loại ứng dụng được hỗ trợ, không triển khai mã nguồn hoặc build ứng dụng, không cung cấp dịch vụ ứng dụng cấp cao như middleware, databases, không bắt buộc sử dụng các giải pháp ghi nhật ký, giám sát hoặc cảnh báo, và không cung cấp hoặc áp dụng bất kỳ cấu hình toàn diện, bảo trì, quản lý hoặc hệ thống tự phục hồi. Kubernetes loại bỏ nhu cầu về điều phối truyền thống, thay vào đó là kiểm soát liên tục từ trạng thái hiện tại sang trạng thái mong muốn.
+![Self-Managed](../images/home/0002-eks-self.jpg)
+
+![AWS-Managed](../images/home/0003-eks-managed.jpg)
+
+![Fargate](../images/home/0004-eks-fargate.jpg)
+
+Trong workshop này, chúng ta sẽ tìm hiểu một số mặt liên quan tới bảo mật Amazon EKS. Để tìm hiểu thêm về bảo mật trên EKS, hãy tham khảo [Amazon EKS Best Practices Guide for Security](https://aws.github.io/aws-eks-best-practices/security/docs/).

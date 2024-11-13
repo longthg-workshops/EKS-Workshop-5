@@ -1,6 +1,5 @@
 ---
 title: "Network-Policies (Chính sách Mạng)"
-date: "`r Sys.Date()`"
 weight: 11
 chapter: false
 pre: "<b> 1.11 </b>"

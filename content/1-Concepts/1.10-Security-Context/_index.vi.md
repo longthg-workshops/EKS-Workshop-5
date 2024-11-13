@@ -1,6 +1,5 @@
 ---
 title: "Security-Context"
-date: "`r Sys.Date()`"
 weight: 10
 chapter: false
 pre: "<b> 1.10 </b>"

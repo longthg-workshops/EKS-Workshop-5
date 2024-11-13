@@ -1,6 +1,5 @@
 ---
 title: "Xác nhận khả năng truy cập DynamoDB"
-date: "`r Sys.Date()`"
 weight: 5
 chapter: false
 pre: "<b> 3.5 </b>"

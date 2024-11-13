@@ -1,6 +1,5 @@
 ---
 title: "Tạo một chính sách đơn giản"
-date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: "<b> 8.1 </b>"
