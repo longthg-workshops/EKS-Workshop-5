@@ -1,6 +1,5 @@
 ---
 title: "Giám sát log EKS"
-date: "`r Sys.Date()`"
 weight: 2
 chapter: false
 pre: "<b> 6.2 </b>"
