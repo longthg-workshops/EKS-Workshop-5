@@ -1,4 +1,3 @@
-
 ---
 title: "Image Security"
 weight: 9
