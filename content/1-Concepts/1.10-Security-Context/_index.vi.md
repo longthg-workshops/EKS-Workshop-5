@@ -17,12 +17,12 @@ Trong phần này, chúng ta sẽ xem xét về bảo mật ngữ cảnh
  $ docker run -cap-add MAC_ADMIN ubuntu
  ```
  
- ![csec](/EKS-Workshop-5/images/p1/p1-10/csec.PNG)
+ ![csec](/images/p1/p1-10/csec.PNG)
  
 #### Bảo mật Kubernetes
 - Bạn có thể chọn cấu hình các thiết lập bảo mật ở mức container hoặc mức pod.
 
- ![ksec](/EKS-Workshop-5/images/p1/p1-10/ksec.PNG)
+ ![ksec](/images/p1/p1-10/ksec.PNG)
 
 #### Ngữ cảnh Bảo mật
 - Để thêm ngữ cảnh bảo mật vào container và một trường gọi là **`securityContext`** dưới phần spec.
@@ -39,7 +39,7 @@ Trong phần này, chúng ta sẽ xem xét về bảo mật ngữ cảnh
       image: ubuntu
       command: ["sleep", "3600"]
   ```
-  ![sxc1](/EKS-Workshop-5/images/p1/p1-10/sxc1.PNG)
+  ![sxc1](/images/p1/p1-10/sxc1.PNG)
   
 - Để đặt cùng một ngữ cảnh ở mức container, sau đó di chuyển toàn bộ phần dưới mục container.
   
@@ -74,7 +74,7 @@ Trong phần này, chúng ta sẽ xem xét về bảo mật ngữ cảnh
         capabilities: 
           add: ["MAC_ADMIN"]
   ```
-  ![cap](/EKS-Workshop-5/images/p1/p1-10/cap.PNG)
+  ![cap](/images/p1/p1-10/cap.PNG)
   
   
 #### Tài liệu Tham khảo K8s

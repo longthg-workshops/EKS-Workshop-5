@@ -45,10 +45,10 @@ Những lệnh này sẽ kích hoạt ba phát hiện khác nhau trên [bảng �
 
 Phát hiện đầu tiên là `Execution:Runtime/NewBinaryExecuted` liên quan đến việc cài đặt gói `curl` thông qua công cụ APT.
 
-![](/EKS-Workshop-5/images/p6/p63/6.3-1-NewBinExec.png)
+![](/images/p6/p63/6.3-1-NewBinExec.png)
 
 Hãy xem xét kỹ các chi tiết của phát hiện này, bởi vì chúng liên quan đến giám sát thời gian chạy của GuardDuty, hiển thị thông tin cụ thể về thời gian chạy, ngữ cảnh và quy trình.
 
 Phát hiện thứ hai và ba liên quan đến các phát hiện `CryptoCurrency:Runtime/BitcoinTool.B!DNS`. Lưu ý một lần nữa rằng các chi tiết phát hiện mang lại thông tin khác nhau, lần này hiển thị hành động `DNS_REQUEST`, và **Bằng chứng tình báo Mối đe dọa**.
 
-![](/EKS-Workshop-5/images/p6/p63/6.3-2-DNS.png)
+![](/images/p6/p63/6.3-2-DNS.png)

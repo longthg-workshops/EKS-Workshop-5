@@ -112,10 +112,10 @@ Trong Kubernetes, một Kiểm Soát Thẩm Định là một phần mã nguồn
 
 Trong luồng dưới đây, [kiểm soát thẩm định động biến đổi và xác thực](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/), được gọi là webhooks kiểm soát thẩm định, được tích hợp vào luồng yêu cầu máy chủ API Kubernetes, thông qua webhooks. Các webhooks gọi ra các dịch vụ, được cấu hình để phản hồi với một số loại yêu cầu máy chủ API nhất định. Ví dụ, bạn có thể sử dụng webhooks để cấu hình các kiểm soát thẩm định động để xác thực rằng các container trong một Pod đang chạy dưới dạng người dùng không phải root, hoặc các container được cung cấp từ các kho lưu trữ đáng tin cậy.
 
-![](/EKS-Workshop-5/images/p7/7.0-1-k8s-admission-controllers.png)
+![](/images/p7/7.0-1-k8s-admission-controllers.png)
 
 #### Sử Dụng PSA và PSS
 
 PSA thực thi các chính sách được mô tả trong PSS, và các chính sách PSS xác định một bộ hồ sơ bảo mật Pods. Trong biểu đồ dưới đây, chúng tôi mô tả cách PSA và PSS hoạt động cùng nhau, với Pods và Namespaces, để xác định các hồ sơ bảo mật Pods và áp dụng kiểm soát thẩm định dựa trên các hồ sơ đó. Như thấy trong biểu đồ dưới đây, các chế độ thực thi PSA và các chính sách PSS được xác định dưới dạng nhãn trong Namespaces đích.
 
-![](/EKS-Workshop-5/images/p7/7.0-2-using-pss-psa.png)
+![](/images/p7/7.0-2-using-pss-psa.png)
