@@ -1,11 +1,11 @@
 ---
-title: "TLS in Kubernetes"
+title: "TLS trong Kubernetes"
 weight: 4
 chapter: false
 pre: "<b> 1.4 </b>"
 ---
 
-#### TLS in Kubernetes
+### Cách sử dụng và thành phần cấu tạo
 
 Đảm bảo tất cả các dịch vụ khác nhau trong cụm sử dụng chứng chỉ máy chủ và tất cả các máy khách sử dụng chứng chỉ máy khách để xác minh họ là người họ nói họ là.
 
@@ -17,6 +17,8 @@ pre: "<b> 1.4 </b>"
 Hãy xem các thành phần khác nhau trong cụm k8s và xác định các máy chủ và máy khách khác nhau cùng với việc ai nói chuyện với ai.
 
 ![EKS](/images/0003/0002.png?featherlight=false&width=90pc)
+
+### Các lệnh thường dùng
 
 #### Generate Certificates
 

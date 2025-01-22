@@ -5,9 +5,7 @@ chapter: false
 pre: "<b> 1.3 </b>"
 ---
 
-#### TLS cơ bản
-
-#### Chứng chỉ (TLS Basics)
+### Chứng chỉ (TLS Basics)
 
 - Chứng chỉ được sử dụng để đảm bảo sự tin tưởng giữa 2 bên trong quá trình giao dịch.
 
@@ -15,12 +13,12 @@ pre: "<b> 1.3 </b>"
 
 ![EKS](/images/0002/0001.png?featherlight=false&width=90pc)
 
-#### Mã hóa đối xứng
+### Mã hóa đối xứng
 Đây là một cách mã hóa an toàn, nhưng nó sử dụng cùng một khóa để mã hóa và giải mã dữ liệu và khóa phải được trao đổi giữa người gửi và người nhận, có nguy cơ một hacker có thể truy cập vào khóa và giải mã dữ liệu.
 
 ![EKS](/images/0002/0002.png?featherlight=false&width=90pc)
 
-#### Mã hóa không đối xứng
+### Mã hóa không đối xứng
 Thay vì sử dụng một khóa duy nhất để mã hóa và giải mã dữ liệu, mã hóa không đối xứng sử dụng một cặp khóa, một khóa riêng tư và một khóa công khai.
 
 ![EKS](/images/0002/0003.png?featherlight=false&width=90pc)
@@ -51,10 +49,10 @@ Thay vì sử dụng một khóa duy nhất để mã hóa và giải mã dữ l
 
 ![EKS](/images/0002/00010.png?featherlight=false&width=90pc)
 
-#### Public Key Infrastructure
+### Hạ tầng khóa công khai
 
 ![EKS](/images/0002/00011.png?featherlight=false&width=90pc)
 
-#### Certificates naming convention
+### Thông lệ đặt tên chứng chỉ
 
 ![EKS](/images/0002/00012.png?featherlight=false&width=90pc)

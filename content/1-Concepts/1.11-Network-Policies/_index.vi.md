@@ -48,11 +48,9 @@ Lưu lượng đi qua một máy chủ web frontend cho người dùng một má
   ```
   $ kubectl create -f policy-definition.yaml
   ```
-  
-#### Ghi chú
 
-#### Bài giảng bổ sung về [Phát triển Chính sách Mạng](https://kodekloud.com/topic/developing-network-policies/)
 
 #### Tài liệu Tham khảo K8s
 - https://kubernetes.io/docs/concepts/services-networking/network-policies/
 - https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/
+- https://kodekloud.com/topic/developing-network-policies/
