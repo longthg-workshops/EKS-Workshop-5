@@ -1,6 +1,5 @@
 ---
 title: "Tạo cụm Kubernetes"
-
 weight: 2
 chapter: false
 pre: "<b> 2.2 </b>"

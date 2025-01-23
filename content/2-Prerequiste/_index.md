@@ -1,6 +1,5 @@
 ---
 title: "Prerequiste"
-
 weight: 2
 chapter: false
 pre: "<b> 2. </b>"
@@ -21,5 +20,3 @@ Before getting into the labs of this workshop, the following three steps must be
     - Either with CloudFormation or Terraform.
 
 3. [Get to know the Lab Structure](./2.3-structure)
-
-As this workshop consists of more than one labs, the environment preparation will be written separately for each lab.

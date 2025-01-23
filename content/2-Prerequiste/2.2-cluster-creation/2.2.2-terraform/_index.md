@@ -1,6 +1,5 @@
 ---
 title: "Using Terraform"
-
 weight: 2
 chapter: false
 pre: "<b> 2.2.2 </b>"
@@ -48,7 +47,7 @@ locals {
 
 The `vpc.tf` configuration will make sure our VPC infrastructure is created:
 
-```file hidePath=true
+```
 locals {
   private_subnets = [for k, v in local.azs : cidrsubnet(var.vpc_cidr, 3, k + 3)]
   public_subnets  = [for k, v in local.azs : cidrsubnet(var.vpc_cidr, 3, k)]

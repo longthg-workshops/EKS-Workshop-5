@@ -1,6 +1,5 @@
 ---
 title: "Using eksctl"
-
 weight: 1
 chapter: false
 pre: "<b> 2.2.1 </b>"
