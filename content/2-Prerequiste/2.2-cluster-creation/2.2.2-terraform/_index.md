@@ -198,7 +198,7 @@ Now that the cluster is ready, head to the [Navigating the labs](/docs/introduct
 The following demonstrates how you will later clean up resources once you have completed your desired lab exercises. These steps will delete all provisioned infrastructure.
 {{% /notice %}}
 
-Before deleting the Cloud9/VSCode IDE environment we need to clean up the cluster that we set up above.
+Before deleting the VSCode/VSCode IDE environment we need to clean up the cluster that we set up above.
 
 First use `delete-environment` to ensure that the sample application and any left-over lab infrastructure is removed:
 

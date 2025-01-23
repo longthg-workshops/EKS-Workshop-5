@@ -83,7 +83,7 @@ Bây giờ cluster đã sẵn sàng, hãy đi đến [Bắt đầu](/docs/introd
 Dưới đây là cách bạn sẽ dọn dẹp tài nguyên sau này khi bạn đã sử dụng xong Cluster EKS bạn đã tạo trong các bước trước để hoàn thành các module.  
 {{% /notice %}}
 
-Trước khi xóa môi trường Cloud9, chúng ta cần dọn dẹp cluster mà chúng ta đã thiết lập trong các bước trước đó.
+Trước khi xóa môi trường VSCode, chúng ta cần dọn dẹp cluster mà chúng ta đã thiết lập trong các bước trước đó.
 
 Đầu tiên sử dụng `delete-environment` để đảm bảo rằng ứng dụng mẫu và bất kỳ cơ sở hạ tầng lab còn lại nào được loại bỏ:
 

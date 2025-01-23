@@ -11,7 +11,7 @@ Provisioning this workshop environment in your AWS account will create resources
 
 This section outlines how to set up the environment to run the labs in your own AWS account.
 
-The first step is to create an IDE with the provided CloudFormation templates. You have the choice between using AWS Cloud9 or a browser-accessible instance of VSCode that will run on an EC2 instance in your AWS account.
+The first step is to create an IDE with the provided CloudFormation templates. You have the choice between using Visual Studio Code or a browser-accessible instance of VSCode that will run on an EC2 instance in your AWS account.
 
 ### **Create your CloudFormation Stack**
 Dowload the template [here](https://github.com/aws-samples/eks-workshop-v2/releases/download/release-snapshot-631eaeb7/ide-cfn.yaml).

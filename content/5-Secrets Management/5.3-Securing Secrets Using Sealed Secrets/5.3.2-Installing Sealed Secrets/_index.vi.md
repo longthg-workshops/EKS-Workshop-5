@@ -8,7 +8,7 @@ pre: "<b> 5.3.2 </b>"
 #### Cài đặt Sealed Secrets
 
 
-Lệnh `kubeseal` được sử dụng để tương tác với bộ điều khiển sealed secrets, và đã được cài đặt sẵn trong Cloud9.
+Lệnh `kubeseal` được sử dụng để tương tác với bộ điều khiển sealed secrets, và đã được cài đặt sẵn trong VSCode.
 
 Điều đầu tiên chúng ta sẽ làm là cài đặt bộ điều khiển sealed secrets trong cụm EKS:
 

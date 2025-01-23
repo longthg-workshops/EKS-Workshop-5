@@ -9,7 +9,7 @@ pre: "<b> 2.2.1 </b>"
 
 **_This is the easiest way to get started, and is recommended for most learners._**
 
-The `eksctl` utility has been pre-installed in your Amazon Cloud9 Environment, so we can immediately create the cluster. This is the configuration that will be used to build the cluster:
+The `eksctl` utility has been pre-installed in your Visual Studio Code Environment, so we can immediately create the cluster. This is the configuration that will be used to build the cluster:
 
 ```yaml
 apiVersion: eksctl.io/v1alpha5
@@ -80,7 +80,7 @@ Now that the cluster is ready, head to the [Navigating the labs](/docs/introduct
 The following demonstrates how you will later clean up resources once you are done using the EKS cluster you created in previous steps to complete the modules.  
 {{% /notice %}}
 
-Before deleting the Cloud9/VSCode IDE environment we need to clean up the cluster that we set up in previous steps.
+Before deleting the VSCode/VSCode IDE environment we need to clean up the cluster that we set up in previous steps.
 
 First, use `delete-environment` to ensure that the sample application and any left-over lab infrastructure is removed:
 

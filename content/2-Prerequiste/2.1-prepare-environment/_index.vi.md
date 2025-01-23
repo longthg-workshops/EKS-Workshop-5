@@ -66,7 +66,7 @@ Mở URL này trong trình duyệt web để truy cập vào **IDE**.
 
 ![EKS](/images/2/1/2/vsc-web.png?featherlight=false&width=90pc)
 
-Bạn có thể đóng **CloudShell** ngay bây giờ, tất cả các lệnh tiếp theo sẽ được thực hiện trong phần terminal ở dưới cùng của **Cloud9 IDE**. **AWS CLI** đã được cài đặt sẵn và sẽ nhận các thông tin xác thực được gắn với **Cloud9 IDE**:
+Bạn có thể đóng **CloudShell** ngay bây giờ, tất cả các lệnh tiếp theo sẽ được thực hiện trong phần terminal ở dưới cùng của **VSCode IDE**. **AWS CLI** đã được cài đặt sẵn và sẽ nhận các thông tin xác thực được gắn với **VSCode IDE**:
 
 ```bash test=false
 $ aws sts get-caller-identity

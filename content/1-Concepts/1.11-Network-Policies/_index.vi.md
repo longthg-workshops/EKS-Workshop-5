@@ -43,7 +43,7 @@ Nằm ở mục Selector. Chức năng này cho phép chọn các pod được �
 
 #### Quy tắc Chính sách Mạng
 
-Hình ảnh sau hiển thị chính sách chỉ cho phép truy cập từ một pod nhất định đến cổng 3306.
+Hình ảnh sau hiển thị chính sách chỉ cho phép truy cập từ một pod xác định đến cổng 3306.
 
 ![npol2](/images/1/11/npol2.PNG)
 

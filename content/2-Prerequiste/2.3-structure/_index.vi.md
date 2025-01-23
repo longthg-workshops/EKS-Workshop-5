@@ -18,9 +18,9 @@ Các bài tập thực hành được thiết kế một cách sao cho bạn có
 Bạn nên bắt đầu mỗi bài lab từ trang đầu tiên. Bắt đầu ở giữa một bài lab sẽ gây ra các biểu hiện không đoán trước được.
 {{% /notice %}}
 
-### Cloud9 IDE
+### VSCode IDE
 
-Sau khi bạn đã truy cập vào Cloud9 IDE, chúng tôi khuyến nghị bạn sử dụng nút **+** và chọn **New Terminal** để mở một cửa sổ terminal mới toàn màn hình.
+Sau khi bạn đã truy cập vào VSCode IDE, chúng tôi khuyến nghị bạn sử dụng nút **+** và chọn **New Terminal** để mở một cửa sổ terminal mới toàn màn hình.
 
 ![EKS](/images/part2/3/00013.png?featherlight=false&width=90pc)
 
@@ -33,7 +33,7 @@ Bạn cũng có thể đóng terminal nhỏ ở dưới nếu bạn muốn.
 
 ### Các lệnh Terminal
 
-Hầu hết các tương tác mà bạn sẽ thực hiện trong hội thảo này sẽ được thực hiện bằng các lệnh terminal, mà bạn có thể gõ thủ công hoặc sao chép/dán vào terminal Cloud9 IDE. Bạn sẽ thấy các lệnh terminal được hiển thị như sau:
+Hầu hết các tương tác mà bạn sẽ thực hiện trong hội thảo này sẽ được thực hiện bằng các lệnh terminal, mà bạn có thể gõ thủ công hoặc sao chép/dán vào terminal VSCode IDE. Bạn sẽ thấy các lệnh terminal được hiển thị như sau:
 
 ```bash test=false
 $ echo "Đây là một ví dụ lệnh"

@@ -9,7 +9,7 @@ pre: "<b> 2.2.2 </b>"
 
 Đây nhằm mục đích phục vụ cho những người học đã quen với việc làm việc với hạ tầng mã nguồn mở của Terraform.
 
-CLI **terraform** đã được cài đặt sẵn trong Môi trường Amazon Cloud9 của bạn, vì vậy chúng ta có thể ngay lập tức tạo ra cụm. Hãy xem qua các tập tin cấu hình Terraform chính sẽ được sử dụng để xây dựng cụm và hạ tầng hỗ trợ của nó.
+CLI **terraform** đã được cài đặt sẵn trong Môi trường Visual Studio Code của bạn, vì vậy chúng ta có thể ngay lập tức tạo ra cụm. Hãy xem qua các tập tin cấu hình Terraform chính sẽ được sử dụng để xây dựng cụm và hạ tầng hỗ trợ của nó.
 
 #### Hiểu các tập tin cấu hình Terraform
 
@@ -198,7 +198,7 @@ Bây giờ cụm đã sẵn sàng, hãy đi đến [Bắt Đầu](/docs/introduc
 
 Phần sau đây sẽ hướng dẫn cách dọn dẹp các tài nguyên sau khi bạn đã hoàn thành các bài thực hành mong muốn. Những bước này sẽ xóa hết tất cả hạ tầng được cung cấp.
 
-Trước khi xóa môi trường Cloud9, chúng ta cần dọn dẹp cụm mà chúng ta đã thiết lập ở trên.
+Trước khi xóa môi trường VSCode, chúng ta cần dọn dẹp cụm mà chúng ta đã thiết lập ở trên.
 
 Đầu tiên, sử dụng `delete-environment` để đảm bảo rằng ứng dụng mẫu và bất kỳ hạ tầng Lab nào còn sót lại đều được loại bỏ:
 

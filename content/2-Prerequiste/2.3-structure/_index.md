@@ -18,7 +18,7 @@ The content of this workshop is made up of:
 You should start each lab from the first page. Starting in the middle of a lab will cause unpredictable behavior.
 {{% /notice %}}
 
-Once you have accessed the Cloud9 IDE, we recommend you use the **+** button and select **New Terminal** to open a new full screen terminal window.
+Once you have accessed the VSCode IDE, we recommend you use the **+** button and select **New Terminal** to open a new full screen terminal window.
 
 ![EKS](/images/part2/3/00013.png?featherlight=false&width=90pc)
 
@@ -30,7 +30,7 @@ You may also close the small terminal at the bottom if you wish.
 
 ### Terminal commands
 
-Most of the interaction you will do in this workshop will be done with terminal commands, which you can either manually type or copy/paste to the Cloud9 IDE terminal. You will see this terminal commands displayed like this:
+Most of the interaction you will do in this workshop will be done with terminal commands, which you can either manually type or copy/paste to the VSCode IDE terminal. You will see this terminal commands displayed like this:
 
 ```bash test=false
 $ echo "This is an example command"
